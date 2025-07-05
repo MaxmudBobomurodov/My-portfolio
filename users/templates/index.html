@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -113,7 +114,7 @@
       <button class="btn">Let’s get started →</button>
     </div>
     <div class="right">
-      <img src="https://via.placeholder.com/280" alt="Profile" class="profile-img">
+      <img src="{% static 'users/myself_for_portfolio.jpg' %}" alt="My photo" class="profile-img">
       <!-- Replace above with your image path if you have one -->
     </div>
   </div>
