@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #333;
+      padding: 15px 30px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MyWebsite</div>
+    <nav>
+      <a href="{% url 'pages:home' %}">Home</a>
+      <a href="{% url 'pages:contact' %}">Contact</a>
+      <a href="{% url 'pages:about' %}">About</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>About Us</h1>
+    <p>Welcome to MyWebsite. We are passionate about building clean, user-friendly websites that help users around the world. Our mission is to provide value and make online experiences smoother.</p>
+    <p>Our team consists of designers, developers, and creators who work together to build simple, beautiful, and powerful web applications.</p>
+  </div>
+
+</body>
+</html>
